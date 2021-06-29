@@ -29,11 +29,11 @@ class Weather extends Component<AcceptedProps, LocationWeatherState>{
             windSpeed: 0,
             timezone: ''
         })
-        this.setCoords();
+        this.getlocation();
     }
     
 
-    setCoords = () => {
+    getlocation = () => {
     
             if ('geolocation' in navigator) {
                 
